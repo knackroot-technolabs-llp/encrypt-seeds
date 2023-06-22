@@ -9,22 +9,22 @@ You can easily encrypt or decrypt the mnemonic of your metamask or other decentr
 ### 1. Clone the respository
 
 ```shell
-$ git clone https://github.com/knackroot-technolabs-llp/encrypt-seeds.git
+git clone https://github.com/knackroot-technolabs-llp/encrypt-seeds.git
 
 ```
 
 ### 2. Get into the folder
 
 ```shell
-$ cd encrypt-seeds
+cd encrypt-seeds
 
 ```
 
 ### 3. Install the dependencies
 
 ```shell
-$ go get github.com/urfave/cli/v2
-$ go get gitlab.com/david_mbuvi/go_asterisks
+go get github.com/urfave/cli/v2
+go get gitlab.com/david_mbuvi/go_asterisks
 
 ```
 #
@@ -33,14 +33,14 @@ $ go get gitlab.com/david_mbuvi/go_asterisks
 ### 1. Build the project
 
 ```shell
-$ go build encrypt-seeds.go
+go build encrypt-seeds.go
 
 ``` 
 
 ### 2. Run the project
 
 ```shell
-$ ./encrypt-seeds [commands]
+./encrypt-seeds [commands]
 
 ```
 #
@@ -50,7 +50,7 @@ $ ./encrypt-seeds [commands]
 ### Run the encrypt command
 
 ```shell
-$ ./encrypt-seeds encrypt
+./encrypt-seeds encrypt
 
 ```
 
@@ -67,7 +67,7 @@ $ ./encrypt-seeds encrypt
 ### Run the decrypt command
 
 ```shell
-$ ./encrypt-seeds decrypt
+./encrypt-seeds decrypt
 
 ```
 
