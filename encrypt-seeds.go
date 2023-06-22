@@ -74,7 +74,7 @@ func main() {
 						fmt.Print("Enter your passcode of 4 to 8 digits : ")
 						passcode, _ := go_asterisks.GetUsersPassword("", true, os.Stdin, os.Stdout)
 						_, err := strconv.Atoi(string(passcode))
-						if err != nil || (len(passcode) >= 4 && len(passcode) <= 8) {
+						if err != nil || !(len(passcode) >= 4 && len(passcode) <= 8) {
 							returnErrorMsg("Passcode should be of 4 to 8 digits and should be numbers")
 						}
 						fmt.Print("Confirm your passcode : ")
@@ -138,7 +138,7 @@ func main() {
 						fmt.Print("Enter your passcode of 4 to 8 digits : ")
 						passcode, _ := go_asterisks.GetUsersPassword("", true, os.Stdin, os.Stdout)
 						_, er := strconv.Atoi(string(passcode))
-						if er != nil || (len(passcode) >= 4 && len(passcode) <= 8) {
+						if er != nil || !(len(passcode) >= 4 && len(passcode) <= 8) {
 							returnErrorMsg("Passcode should be of 4 to 8 digits and should be numbers")
 						}
 						fmt.Println("Enter words one by one : ")
